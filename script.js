@@ -27,25 +27,16 @@ function shatter(){
     setTimeout(()=>{
         let allBlocks = document.getElementsByClassName("block");
         console.log(allBlocks);
+
+        let factor = Math.random()*2000;
         for(let i=0;i<allBlocks.length;i++){
-            let randomNumber = Math.floor(Math.random()*6);
-            
-            if(randomNumber===0){
-                allBlocks[i].classList.add("fall-one");
-            }else if(randomNumber===1){
-                allBlocks[i].classList.add("fall-two");
-            }else if(randomNumber===2){
-                allBlocks[i].classList.add("fall-three");
-            }else if(randomNumber===3){
-                allBlocks[i].classList.add("fall-four");
-            }else if(randomNumber===4){
-                allBlocks[i].classList.add("fall-five");
-            }else if(randomNumber===5){
-                allBlocks[i].classList.add("fall-six");
-            }
+            allBlocks[i].style.top=`${Math.random()*factor}px`
+            allBlocks[i].style.left=`${Math.random()*factor}px`
+            allBlocks[i].style.opacity=0;
+            allBlocks[i].style.borderRadius="100%";
         }
         setTimeout(()=>{
             location.reload();
-        },3000)
+        },4000)
     },0)
 }
