@@ -33,7 +33,6 @@ function shatter(){
             allBlocks[i].style.top=`${Math.random()*factor}px`
             allBlocks[i].style.left=`${Math.random()*factor}px`
             allBlocks[i].style.opacity=0;
-            allBlocks[i].style.borderRadius="100%";
         }
         setTimeout(()=>{
             location.reload();
