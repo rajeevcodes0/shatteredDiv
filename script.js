@@ -28,7 +28,7 @@ function shatter(){
         let allBlocks = document.getElementsByClassName("block");
         console.log(allBlocks);
 
-        let factor = Math.random()*2000;
+        let factor = (Math.random()*2000)+1500;
         for(let i=0;i<allBlocks.length;i++){
             allBlocks[i].style.top=`${Math.random()*factor}px`
             allBlocks[i].style.left=`${Math.random()*factor}px`
