@@ -21,9 +21,8 @@ html{
     height: 200px;
     width: 200px;
     line-height: 0px;
-    position: absolute;
-    top:5%;
-    left:10%;
+    position: relative;
+    
 }
 
 .block{
@@ -173,6 +172,6 @@ html{
 
 @media  (max-width:600px) {
     .shatter-button{
-        top:50%;
+        top:10%;
     }
 }
